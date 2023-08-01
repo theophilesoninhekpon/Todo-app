@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope|Lexend+Deca">
+    <link rel="icon" href="checklist.png" type="image/png">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/dd3ee9631d.js" crossorigin="anonymous"></script>
+</head>
+    <div class="container" id="container">
+
+        <h1> <span class="far fa-note-sticky icon"></span>Todo App</h1>
+        <div class="wrapper" id="wrapper">
+        <form method="post">
+            <div class="form">
+                <div class="todo-input">
+                    <span class="select-icon fas fa-angle-down"></span>
+                    <input type="text" id="todo" placeholder="What needs to be done ?">
+                </div>
+                <button type="submit" id="addbtn" class="addbtn bg-orange">Ajouter</button>
+            </div>
+        </form>
+        <div id="todos"> 
+            <ul class="todo-list" id="todo-list"></ul>
+            <span class="default"> Aucune tâche planifiée !</span>
+        </div>
+        <div class="toolbar" id="toolbar">
+            <p class="red item-number" id="item-number"></p>
+            <div class="toolbar-btn">
+                <button type="button" class="bg-red" id="all">All</button>
+                <button type="button" class="bg-orange" id="active">Active</button>
+                <button type="button" class="bg-green" id="completed">Completed</button>
+            </div>
+        </div>
+        </div>
+        <small> &copy; Todo App By Théophile Soninhekpon</small>
+    </div>
+   
+</body>
+</html>
